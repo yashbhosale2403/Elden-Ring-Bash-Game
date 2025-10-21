@@ -1,43 +1,39 @@
 ---
 
-# 🐉 Elden Ring Bash Game
+# 🗡️ Elden Ring Bash Game
 
-This is a minimalist text-based battle game written in Bash, inspired by the legendary difficulty of Elden Ring. The game presents a simple beast battle where the player must guess a number to survive.
+A minimalist, text-based battle game written in Bash, inspired by the brutal charm of *Elden Ring*. This micro-adventure challenges players to survive two battles by guessing random numbers. Choose wisely—or perish.
 
-## 📜 How It Works
+## 🎮 Game Description
 
-When you run the script, you'll face your first beast. The game randomly selects a number (0 or 1), and you must guess correctly to defeat the beast. If you guess wrong… well, as the game says: **"you died."**
+In this game, you face two foes:
 
-## 🧾 Script Breakdown
+1. **The First Beast** – Guess a number between 0 and 1. A correct guess slays the beast. A wrong guess ends the game.
+2. **Margrait** – If you survive the first beast, you must guess a number between 0 and 9 to defeat Margrait. Victory or defeat depends on your luck.
 
-```bash
-#!/bin/bash
-echo "you died"
+The game uses Bash’s `$RANDOM` function to simulate unpredictability and suspense.
 
-# First beast battle
-beast=$(( $RANDOM % 2 ))
-echo "your first beast approcesh. prepare to battle. pick a number from 0-1. (0/1)"
-read responce
+## 📂 File Contents
 
-if [[ $beast == $responce ]]; then
-    echo "you kill the beast"
-else
-    echo "you are died"
-fi
+```
+Elden-Ring-Bash-Game/
+└── eldenring.sh   # Main game script
 ```
 
-### Key Features
+## 🧠 Features
 
-- Randomized beast behavior using `$RANDOM % 2`
+- Randomized enemy behavior using `$RANDOM`
 - Simple user input with `read`
-- Conditional logic to determine victory or defeat
+- Conditional logic with `if` statements
+- Sleep delay for dramatic pacing
+- Two-stage battle system
 
 ## 🚀 Getting Started
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yb6734104-cpu/Elden-Ring-game-in-bash.git
-   cd Elden-Ring-game-in-bash
+   git clone https://github.com/yashbhosale2403/Elden-Ring-Bash-Game.git
+   cd Elden-Ring-Bash-Game
    ```
 
 2. Make the script executable:
@@ -50,19 +46,19 @@ fi
    ./eldenring.sh
    ```
 
-## 🛠️ Requirements
+## 🛠 Requirements
 
 - Bash shell (Linux, macOS, or WSL on Windows)
 
 ## 📌 Notes
 
-- This is a very basic prototype. You can expand it by adding more beasts, health points, weapons, or story elements.
-- The spelling of "approcesh" and "you are died" adds a quirky charm—feel free to refine or keep it for flavor.
+- The quirky spelling (“approcesh”, “you are died”, “you loose”) adds charm and humor. Feel free to refine or keep it for flavor.
+- This is a basic prototype. You can expand it with health points, inventory, multiple enemies, or story progression.
 
 ## 📄 License
 
-This project is open-source and available under the MIT License.
+This project is open-source under the MIT License.
 
 ---
 
-Would you like me to add instructions for expanding the game or turning it into a multi-level adventure?
+Would you like help turning this into a multi-level game or adding ASCII art for dramatic flair?
