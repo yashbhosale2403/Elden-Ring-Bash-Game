@@ -60,5 +60,3 @@ Elden-Ring-Bash-Game/
 This project is open-source under the MIT License.
 
 ---
-
-Would you like help turning this into a multi-level game or adding ASCII art for dramatic flair?
